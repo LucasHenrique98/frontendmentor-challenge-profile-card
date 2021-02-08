@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @font-face {
+        font-family: 'Kumbh Sans';
+        src: url('./KumbhSans-Regular.ttf');
+      }
+
+      .card {
+        border-radius: 15px;
+        margin: auto;
+        margin-top: 10vw;
+
+        width: 400px;
+        height: 500px;
+
+        background-image: url('./images/bg-pattern-card.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: white;
+
+        box-shadow: 2px 2px 20px black;
+      }
+
+      .card img {
+        width: 150px;
+        border: 5px solid white;
+        border-radius: 50%;
+
+        position: relative;
+        left: 125px;
+
+        margin-top: 80px;
+      }
+      .card p {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400px;
+      }
+
+      .status {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .statusDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .font-weight {
+        font-weight: 700;
+      }
+
+      .light-font {
+        color: hsl(0, 0%, 59%);
+      }
+
+      body {
+        background-color: hsl(185, 75%, 39%);
+        background-image: url('./images/bg-pattern-top.svg'),
+          url('./images/bg-pattern-bottom.svg');
+        background-position: -300px -400px, 1200px 500px;
+        background-repeat: no-repeat;
+
+        font-family: 'Kumbh Sans';
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        width: 99%;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img src="./images/image-victor.jpg" alt="victor img" />
+      <p class="font-weight">Victor Crest <span class="light-font">26</span></p>
+      <p class="light-font">London</p>
+      <br />
+      <hr />
+      <div class="statusDiv">
+        <div class="status">
+          <p class="font-weight">80K</p>
+          <p class="light-font">Followers</p>
+        </div>
+        <div class="status">
+          <p class="font-weight">803K</p>
+          <p class="light-font">Likes</p>
+        </div>
+        <div class="status">
+          <p class="font-weight">1.4K</p>
+          <p class="light-font">Photos</p>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/LucasHenrique98" target="_blank"
+        >Lucas Henrique</a
+      >.
+    </div>
+  </body>
+</html>
